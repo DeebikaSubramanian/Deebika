@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles,Button } from "@material-ui/core";
 import { motion, useAnimation } from "framer-motion";
 import { LinkedIn, Instagram, GitHub, Email } from "@material-ui/icons";
 import IconBtn from "../IconBtn";
@@ -39,7 +39,8 @@ const Social = ({ mobile }) => {
         return (
             <motion.div className={classes.wrapper}>
                 <motion.div animate={controls} custom={0}>
-                    <IconBtn icon={GitHub} m={1} href="https://github.com/DeebikaSubramanian" />
+               
+                    
                 </motion.div>
                 {/* <motion.div animate={controls} custom={1}>
                     <IconBtn icon={Instagram} m={1} href="https://www.instagram.com/mehdibha/" />
@@ -47,9 +48,20 @@ const Social = ({ mobile }) => {
                 <motion.div animate={controls} custom={2}>
                     <IconBtn icon={LinkedIn} m={1} href="https://www.linkedin.com/in/mehdi-ben-hadj-ali-6a7435131/" />
                 </motion.div> */}
-                <motion.div animate={controls} custom={3}>
+                    <Button
+                   className={classes.button}
+                   href="https://github.com/DeebikaSubramanian"
+                   variant="outlined"
+                   color="primary"
+                   underline="none"
+                   target="_blank"
+                   
+            >
+                   <IconBtn icon={GitHub} m={1}/>
+               </Button>
+                {/* <motion.div animate={controls} custom={3}>
                     <IconBtn icon={Email} m={1} href="mailto:deebideebikask@gmail.com" />
-                </motion.div>
+                </motion.div> */}
                 <motion.div animate={controls} custom={4}>
                     <DarkModeSwitcher />
                 </motion.div>
@@ -72,6 +84,10 @@ const useStyles = makeStyles((theme) => ({
     mobileWrapper: {
         display: "flex",
     },
+    button:
+    {
+        border:"none"
+    }
 }));
 
 export default Social;
