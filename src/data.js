@@ -1,13 +1,12 @@
 const skillsList = [
     { title: "React JS", value: 75 },
     { title: "Javascript", value: 80 },
-    { title: "Next js", value: 80 },
     { title: "Material UI", value: 80 },
     { title: "Styled components", value: 80 },
+    { title: "Bootstrap", value: 70 },
     { title: "Node JS ", value: 60 },
-    { title: "Express JS ", value: 70 },
     { title: "Firebase", value: 70 },
-    { title: "CSS", value: 70 }
+    { title: "CSS", value: 75}
 ];
 const projectList = [
     {
@@ -33,7 +32,7 @@ const projectList = [
     {
         id: 3,
         title: "About the Image",
-        technologies: ["React JS", "Node JS", "MongoDB","Material-UI"],
+        technologies: ["React JS","Redux", "Node JS", "MongoDB","Material-UI"],
         backgroundImage:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqaFoC0uAUfzEl3govT1uaCdicLxBZEanPQ&usqp=CAU",
         frontImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nLywJORknJXRYvSr6fYpvz3dzmwRILIFWw&usqp=CAU",
