@@ -20,7 +20,7 @@ const ProjectsGallery = () => {
                         item
                         xs={12}
                         sm={6}
-                        md={4}
+                        md={5}
                         key={item.id}
                         classes={{ item: classes.item }}
                         >

@@ -169,7 +169,7 @@ const useStyles = makeStyles((theme) => ({
         top: 0,
         right: 0,
         margin:"2px",
-        color:"white"
+        color:"red"
     },
 }));
 

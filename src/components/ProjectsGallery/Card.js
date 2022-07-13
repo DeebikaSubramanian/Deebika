@@ -44,7 +44,7 @@ const Card = ({ id, title, backgroundImage, frontImage, overview, technologies, 
     return (
         <MuiCard
             className={classes.root}
-            elevation={10}
+            elevation={20}
             component={motion.div}
             layoutId={id}
             onMouseEnter={handleMouseEnterControls}
@@ -67,7 +67,7 @@ const Card = ({ id, title, backgroundImage, frontImage, overview, technologies, 
                         alt={title}
                     />
                 </CardMedia>
-                <CardContent style={{display:"flex", flexDirection:'column', height:"100%", justifyContent:"space-between"}}>
+                <CardContent style={{display:"flex", flexDirection:'column', height:"200%", justifyContent:"space-between"}}>
                     <Typography variant="h5" className={classes.title} component={motion.h5} layoutId={`title-${id}`}>
                         {title}
                     </Typography>
@@ -127,6 +127,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         position: "relative",
         height: 350,
+        // width:600,
         overflow: "hidden",
         cursor: "pointer",
         backgroundColor: theme.palette.primary.main,
@@ -154,20 +155,22 @@ const useStyles = makeStyles((theme) => ({
         color:theme.palette.primary.contrastText
     },
     overview: {
-        fontSize: "14px",
+        fontSize: "15px",
         marginBottom: theme.spacing(1),
         color:theme.palette.primary.contrastText
     },
     technologies: {
-        fontSize: "15px",
-        color:"rgb(10,10,10)"
+        fontSize: "16px",
+        color:"rgb(10,10,20)",
+        textDecoration:"bold"
     },
     hover: {
         position: "absolute",
         top: 0,
         height: "100%",
         width: "100%",
-        backgroundColor: "rgba(0,0,0,0.97)",
+        backgroundColor: "white",
+        color:"red",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
