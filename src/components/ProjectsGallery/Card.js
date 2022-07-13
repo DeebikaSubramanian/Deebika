@@ -127,7 +127,6 @@ const useStyles = makeStyles((theme) => ({
     root: {
         position: "relative",
         height: 350,
-        // width:600,
         overflow: "hidden",
         cursor: "pointer",
         backgroundColor: theme.palette.primary.main,
@@ -161,8 +160,8 @@ const useStyles = makeStyles((theme) => ({
     },
     technologies: {
         fontSize: "16px",
-        color:"rgb(10,10,20)",
-        textDecoration:"bold"
+        // color:"rgb(10,10,20)",
+        color:"white"
     },
     hover: {
         position: "absolute",

@@ -69,7 +69,7 @@ const ExtendedCard = ({ id, title, backgroundImage, frontImage, link, git,overvi
                     target="_blank"
                 >
                     View
-                </Button>
+                </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <Button
                    
                    href={git}
